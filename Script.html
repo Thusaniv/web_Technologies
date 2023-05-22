@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Embedded javaScript</title>
+</head>
+<body>
+<p id="demo">original </p>
+<h1 id= "heading">Web</h1>
+<button onclick ="console.log('Thank you');">Please click</button>
+<button onclick ="this.innerHTML=Date()">date</button>
+<button onclick ="displayDate()">The time is?</button>
+<script>
+/*document.writeln("Frist Line<br>");
+document.write("second Line");
+//single line comment
+multiple
+line comment
+window.alert("New page");
+document.getElementById("demo").innerHTML="Hello world";
+confirm("new page");
+prompt("Enter name");*/
+function displaydate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+var x=10;
+document.write(x+"<br>");
+var x=15;
+document.write(x+"<br>");
+var y="hello";
+document.write(y+"<br>");
+let a= 100;
+document.write(a+"<br>");
+const z=10;
+//z=16;
+document.write(z+"<br>");
+const ob1={firstname:"web",lastname:"tech"};
+document.write(ob1.firstname+"<br>");
+const arr1=["php","java"];
+document.writeln(arr1[0]);
+var b=10;
+var c=15;
+document.write((b+c)+"<br>");
+
+var m=10;
+let n=23;
+document.write((m==n)+"<br>");
+document.write((10<<3)+"<br>");
+document.write((30>>4)+"<br>");
+
+var marks=10;
+var result=(marks>50)?"pass":"fail";
+document.write(result+"<br>");
+
+const person ={name:"john",age:20};
+document.write(("name"in person)+"<br>");
+document.write("<br>");
+
+if (marks<30){
+document.write("pass"+"<br>");}
+else
+document.write("faill <br>");
+var num =3;
+var day ="";
+switch(num){
+case 1:day="monday";
+break;
+case 2:day="tuesday";
+break;
+case 3:day="wednesday";
+break;
+case 4:day="thursday";
+break;
+case 5:day="friday";
+break;
+case 6:day="saturday";
+break;
+case 7:day="sunday";
+break;
+default:day="enter num";
+}
+document.write(day+"<br>");
+document.write("Even Numbers:<br>");
+for(var i=1;i<=100;i++){
+if(i%2==0){
+document.write(i, ", ");
+} }
+document.write("<br> Odd Numbers: <br>");
+for(var i=1;i<=100;i++){
+if(i%2!=0){
+document.write(i, ", ");
+}
+}
+function print(){
+document.write(name+"<br>");
+}
+var name="web";
+print(name);
+var x=print(name);
+document.write(x+"<br>");
+
+function area(l,w)
+{
+return l*w;
+documet.write((l*w)+"<br>");
+}
+var l=7;
+var w=3;
+area(7,3);
+document.write((area(7,3))+"<br>");
+
+var x=parseInt(prompt ("enter value x"));
+var y = parseInt(prompt("enter value y"));
+var o = prompt("Enter the operator");
+if(o=='+'){
+document.write((x+y)+"<br>");
+}
+else if (o=='*'){document.write((x*y)+"<br>");}
+else if(o=='/')
+{
+document.write((x/y)+"<br>");}
+var str ="web";
+document.write(str.charAt(0));
+document.getElementById("heading").style.color="red";
+
+document.getElementById("demo").innerHTML="Hello world";
+
+</script>
+<p id ="demo"></p>
+</body></html>
